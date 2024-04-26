@@ -65,6 +65,8 @@ type Customer struct {
 	CreatedAt                 *time.Time             `json:"created_at,omitempty"`
 	UpdatedAt                 *time.Time             `json:"updated_at,omitempty"`
 	Metafields                []Metafield            `json:"metafields,omitempty"`
+	Password                  string                 `json:"password,omitempty"`
+	PasswordConfirmation      string                 `json:"password_confirmation,omitempty"`
 }
 
 // Represents the result from the customers/X.json endpoint
